@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Ingreso</title>
+  </head>
+  <body>
+    <h1>Ingrese Producto</h1>
+    <form action="/api/productos/" method="POST">
+      <div>
+        <label>ID</label>
+        <input type="number" name="id" required />
+      </div>
+
+      <div>
+        <label>Titulo</label>
+        <input type="text" name="titulo" required />
+      </div>
+
+      <div>
+        <label>Precio</label>
+        <input type="number" name="price" required />
+      </div>
+
+      <div>
+        <label>Foto URL</label>
+        <input type="url" name="thumbnail" />
+      </div>
+
+      <input type="submit" name="submit" />
+    </form>
+  </body>
+</html>
